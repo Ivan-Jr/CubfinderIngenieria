@@ -1,0 +1,70 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id "org.sonarqube" version "3.0"
+}
+
+android {
+    namespace 'com.example.reservas20'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.reservas20"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // Agregar la URL de CouchDB para release
+            buildConfigField "String", "COUCHDB_URL", "\"http://192.168.0.17:5984/cubiculo/\"" // Cambiado
+        }
+        debug {
+            // Agregar la URL de CouchDB para debug
+            buildConfigField "String", "COUCHDB_URL", "\"http://192.168.0.17:5984/cubiculo/\"" // Cambiado
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+// Aquí está el bloque `sonarqube` fuera de la sección `android`
+sonarqube {
+    properties {
+        property "sonar.projectKey", "Cubfinder"
+        property "sonar.host.url", "http://localhost:9000"
+        property "sonar.login", "b3f1f5829b02fbf71bad2101390ef34f90351799"
+    }
+}
+
+
+dependencies {
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-auth:21.2.0'
+    implementation 'com.google.firebase:firebase-firestore:25.1.0'
+    implementation 'com.google.firebase:firebase-messaging:24.0.1'
+    implementation 'androidx.test:monitor:1.7.2'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

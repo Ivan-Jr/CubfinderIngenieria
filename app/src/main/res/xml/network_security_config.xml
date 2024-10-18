@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Especifica la IP de tu servidor CouchDB sin el puerto -->
+        <domain includeSubdomains="true">192.168.0.12</domain>
+    </domain-config>
+</network-security-config>

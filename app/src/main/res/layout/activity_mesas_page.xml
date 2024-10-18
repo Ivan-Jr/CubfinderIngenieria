@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservar Mesa"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="24dp"/>
+
+    <!-- Imagen de una mesa de universidad -->
+    <ImageView
+        android:id="@+id/imgMesaUniversidad"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/mesa_universidad"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/etFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha (dd/mm/aaaa)"
+        android:focusable="false"
+        android:clickable="true"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Agregue una Hora(1 a 2)"
+        android:inputType="time"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etNumPersonas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de personas"
+        android:inputType="number"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnReservar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reservar Mesa"
+        android:backgroundTint="@color/common_google_signin_btn_text_light_default"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_light"
+        android:visibility="gone"
+        android:text="Error: Verifique los datos ingresados"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReservasPantalla">
+
+    <!-- Texto para seleccionar la fecha, al hacer clic abrirá un DatePicker -->
+    <TextView
+        android:id="@+id/txt_fecha_reserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona la fecha de la reserva"
+        android:textSize="16sp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        android:layout_marginTop="32dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- EditText para ingresar el tiempo de uso (en horas) -->
+    <EditText
+        android:id="@+id/edit_tiempo_uso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tiempo de uso (en horas)"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_fecha_reserva"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- EditText para ingresar el número de personas -->
+    <EditText
+        android:id="@+id/edit_num_personas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Número de personas (3 a 6)"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_tiempo_uso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Botón Continuar -->
+    <Button
+        android:id="@+id/btn_continuar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Continuar"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/edit_num_personas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Botón Cancelar -->
+    <Button
+        android:id="@+id/btn_cancelar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_continuar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

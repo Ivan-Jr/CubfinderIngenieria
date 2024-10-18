@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "361614026333",
+    "project_id": "reservas-v2-bacfe",
+    "storage_bucket": "reservas-v2-bacfe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361614026333:android:19f7105dbb6301a93a0fb4",
+        "android_client_info": {
+          "package_name": "com.example.reservas20"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrfEdgCXaxfmPJ-sMIm2Bsn9FnxdjWtFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361614026333:android:8de8c330fef1dbb53a0fb4",
+        "android_client_info": {
+          "package_name": "com.example.resservas2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrfEdgCXaxfmPJ-sMIm2Bsn9FnxdjWtFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

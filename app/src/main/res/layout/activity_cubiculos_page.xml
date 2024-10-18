@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:padding="16dp"
+        android:rowCount="3">
+
+        <!-- Cubículo #1 -->
+        <LinearLayout
+            android:id="@+id/Cubi_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/box"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/circle_green" /> <!-- Usa el drawable circular que acabas de definir -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cubículo #1"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/imagencub" /> <!-- Reemplaza 'cubicle_image' con tu imagen de cubículo -->
+
+            <Button
+                android:id="@+id/btn_detalles1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detalles >>" />
+        </LinearLayout>
+
+        <!-- Cubículo #2 -->
+        <LinearLayout
+            android:id="@+id/Cubi_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/box"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/circle_green" /> <!-- Usa el drawable circular que acabas de definir -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cubículo #2"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/imagencub" /> <!-- Reemplazar 'cubicle_image' con imagen de cubículo -->
+
+            <Button
+                android:id="@+id/btn_detalles2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detalles >>" />
+        </LinearLayout>
+
+        <!-- Cubículo #3 -->
+        <LinearLayout
+            android:id="@+id/Cubi_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/box"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/circle_red" /> <!-- Usa el drawable circular que acabas de definir -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cubículo #3"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/imagencub" /> <!-- Reemplazar 'cubicle_image' con imagen de cubículo -->
+
+            <Button
+                android:id="@+id/btn_detalles3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detalles >>" />
+        </LinearLayout>
+
+        <!-- Cubículo #4 -->
+        <LinearLayout
+            android:id="@+id/Cubi_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/box"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/circle_red" /> <!-- Usa el drawable circular que acabas de definir -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cubículo #4"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/imagencub" /> <!-- Reemplazar 'cubicle_image' con imagen de cubículo -->
+
+            <Button
+                android:id="@+id/btn_detalles4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detalles >>" />
+        </LinearLayout>
+
+        <!-- Cubículo #5-6 -->
+        <LinearLayout
+            android:id="@+id/Cubi_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/box"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/circle_yellow" /> <!-- Usa el drawable circular que acabas de definir -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cubículo #5"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/imagencub"/> <!-- Reemplazar 'cubicle_image' con imagen de cubículo -->
+
+            <Button
+                android:id="@+id/btn_detalles5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detalles >>" />
+        </LinearLayout>
+
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

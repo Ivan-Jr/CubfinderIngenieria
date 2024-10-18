@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores adaptados para modo oscuro -->
+    <color name="black">#FFFFFFFF</color> <!-- Texto negro es blanco en oscuro -->
+    <color name="white">#FF000000</color> <!-- Texto blanco es negro en oscuro -->
+    <color name="blue">#214EF3</color>    <!-- Mantiene el azul -->
+
+    <color name="textColorPrimary">#FFFFFFFF</color> <!-- Texto principal blanco -->
+    <color name="backgroundColor">#26262b</color>    <!-- Fondo oscuro -->
+
+    <!-- Colores para los botones en modo oscuro -->
+    <color name="buttonColor">#444444</color> <!-- Color oscuro para botón -->
+    <color name="buttonTextColor">#FFFFFF</color> <!-- Texto blanco para botones -->
+</resources>

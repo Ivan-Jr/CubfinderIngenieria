@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo base de la aplicación -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Colores adaptados al modo claro -->
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/white</item>
+
+        <!-- Botón personalizado -->
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+    </style>
+
+    <!-- Estilo para modo oscuro -->
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.DayNight">
+        <!-- Colores adaptados al modo oscuro -->
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/white</item>
+
+        <!-- Botón personalizado para modo oscuro -->
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+    </style>
+
+    <!-- Estilo de botón para ambos modos -->
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:backgroundTint">@color/buttonColor</item>
+        <item name="android:textColor">@color/buttonTextColor</item>
+    </style>
+</resources>

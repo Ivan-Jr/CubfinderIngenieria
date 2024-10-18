@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores comunes -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#214EF3</color>
+
+    <!-- Colores adaptativos -->
+    <color name="textColorPrimary">?android:attr/textColorPrimary</color>
+    <color name="backgroundColor">#FFFFFF</color> <!-- Fondo claro -->
+
+    <!-- Colores para los botones en modo claro -->
+    <color name="buttonColor">@color/blue</color>
+    <color name="buttonTextColor">@color/white</color>
+</resources>
+

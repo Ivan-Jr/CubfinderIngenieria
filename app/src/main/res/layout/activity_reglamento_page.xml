@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReglamentoPage"
+    android:padding="40dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reglamento de cubiculos"
+        android:gravity="center"
+        android:textSize="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:text="1. Respetar al personal bibliotecario y cumplir las normas establecidas." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="2. No utilizar tono de voz alto cuando se estudia en forma grupal."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="3. No usar máquinas de escribir, impresoras, celulares, laptops, tabletas o cualquier dispositivo con bocinas activadas, que distraiga o afecte la tranquilidad de la biblioteca."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="4. Colaborar con la limpieza y el orden del mobiliario, depositando la basura generada en los recipientes instalados en la sala."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="5. Evitar consumir alimentos o bebidas caso contrario se les pedirá retirarse de las instalaciones."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="6. No fumar dentro de las instalaciones."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="7. Cuidar y hacer buen uso del mobiliario no manchar, rayar con instrumentos cortantes o dejar residuos de pegamento."/>
+
+    <Button
+        android:id="@+id/btn_continuar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Continuar"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+    </LinearLayout>
+

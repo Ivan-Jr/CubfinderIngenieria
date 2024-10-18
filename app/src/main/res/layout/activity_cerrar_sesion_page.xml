@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Imagen que ya estaba previamente (logologin) -->
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logologin"
+            android:contentDescription="Logo de la app" />
+
+        <!-- Imagen de perfil del usuario logueado -->
+        <ImageView
+            android:id="@+id/img_perfil"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_profile_placeholder"
+            android:contentDescription="Imagen de perfil" />
+
+        <!-- Texto que muestra el nombre del usuario logueado -->
+        <TextView
+            android:id="@+id/txt_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre: [NOMBRE DEL USUARIO]"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp" />
+
+        <!-- Texto que muestra el carnet del usuario logueado -->
+        <TextView
+            android:id="@+id/txt_carnet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carnet: [CARNET DEL USUARIO]"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp" />
+
+        <!-- Botón para cerrar sesión -->
+        <Button
+            android:id="@+id/btn_cerrarSesion"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Cerrar sesión"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#214EF3"/> <!-- Color de fondo del botón -->
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

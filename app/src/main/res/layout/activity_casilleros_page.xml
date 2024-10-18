@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CasillerosPage">
+
+    <!-- ImageView para mostrar la imagen de casilleros -->
+    <ImageView
+        android:id="@+id/img_casilleros"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:src="@drawable/imagen_casilleros"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Texto para seleccionar la fecha, al hacer clic abrirá un DatePicker -->
+    <TextView
+        android:id="@+id/txt_fecha_reserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona la fecha de la reserva"
+        android:textSize="16sp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/img_casilleros"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- EditText para ingresar el tiempo de uso (en horas) -->
+    <EditText
+        android:id="@+id/edit_tiempo_uso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tiempo de uso (1-2 horas)"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_fecha_reserva"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Botón Reservar -->
+    <Button
+        android:id="@+id/btn_reservar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Reservar"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/edit_tiempo_uso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintWidth_percent="0.8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
